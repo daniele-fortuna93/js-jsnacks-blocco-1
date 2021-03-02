@@ -4,10 +4,14 @@
 
 // 1.Inserisci la prima parola
 var parola1 = prompt("Inserisci la prima parola.");
-
+if ( parola1.length == 0) {
+  parola1 = prompt("Per favore inserisci la prima parola.");
+}
 // 2. Inserisci la seconda parola
 var parola2 = prompt("Inserisci la seconda parola.");
-
+if ( parola2.length == 0) {
+  parola2 = prompt("Per favore inserisci la seconda parola.");
+}
 // 3.Controllo lunghezza parole
 if ( parola1.length > parola2.length ) {
   console.log(parola2);
