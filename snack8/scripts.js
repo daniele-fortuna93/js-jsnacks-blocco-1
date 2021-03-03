@@ -7,16 +7,12 @@
  var numeroScomposto = [];
 
 
- // 3. Scomposizione numero
+ // 3. Scomposizione numero e somma numeri
   var x = 0;
+  var somma = 0;
   for (var i = 0; i < numero.length; i++) {
     x = numero[i];
     numeroScomposto.push(x);
+    somma += parseInt(numeroScomposto[i]);
   }
-
- // 4. Somma cifre
- var somma = 0;
- for (var i = 0; i < numeroScomposto.length; i++) {
-   somma += parseInt(numeroScomposto[i]);
- }
  console.log(somma);
