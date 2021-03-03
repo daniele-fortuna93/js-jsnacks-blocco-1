@@ -3,16 +3,9 @@
  // 1. Richiedi all'utente un numero di 4 cifre
  var numero = prompt("Inserisci un numero di 4 cifre");
 
- // 2. Creazione di un array per inserimento singole cifre
- var numeroScomposto = [];
-
-
- // 3. Scomposizione numero e somma numeri
-  var x = 0;
+ // 2. Scomposizione numero e somma numeri
   var somma = 0;
   for (var i = 0; i < numero.length; i++) {
-    x = numero[i];
-    numeroScomposto.push(x);
-    somma += parseInt(numeroScomposto[i]);
+    somma += parseInt(numero[i]);
   }
  console.log(somma);
